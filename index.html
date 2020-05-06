@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div id="quizContainer" class="container">
+    <div class="title">Quiz</div>
+    <div id="question" class="question"></div>
+    <label class="option" id="option-1"><input type="radio" name="option" value="1" class="choices"><span id="opt1"></span></label>
+    <label class="option" id="option-2"><input type="radio" name="option" value="2" class="choices"><span id="opt2"></span></label>
+    <label class="option" id="option-3"><input type="radio" name="option" value="3" class="choices"><span id="opt3"></span></label>
+    <label class="option" id="option-4"><input type="radio" name="option" value="4" class="choices"><span id="opt4"></span></label>
+    <button id="nextButton" class="next-btn" onClick="loadNextQuestion();">Next</button>
+    
+  </div>
+  <div id="counter"></div>
+  <div id="result" class="container result" style="display: none;"></div>
+  <button class="play-again" style="display:none">Play Again</button>
+  
+  <script src="quiz.js"></script>
+  <script src="quiz-script.js"></script>
+</body>
+</html>
